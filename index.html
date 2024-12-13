@@ -6,7 +6,8 @@ container
 ## Dicas:
 se escrever .teste você cria uma dive com a class teste de uma vez.
 .row>.col-md-4*2 -> isto aqui cria duas div col dentro da div row
-
+input.form-control.form-control-lg*2 -> form-control e form-control-lg são classes do bootstrap criando dois inputs (pra botar email, senha, etc, aquela coisa)
+btn btn-primary w-100 -> classe para criar botão pelo bootstrap. w-100 é para ajustar tamanho
 -->
 
 
@@ -20,14 +21,24 @@ se escrever .teste você cria uma dive com a class teste de uma vez.
     <link rel="stylesheet" href="css/custom.css">
 
 </head>
-<body class="container"> <!--vai dar espaçamento lateral-->
+<body class="container login"> <!--vai dar espaçamento lateral-->
     <div class="row">
-        <div class="col-md-4 bg-dark">
-            Imagem
+        <div class="col-md-5 offset-md-1"> <!--(estava assim pra colocar background col-md-5 offset-md-1 bg-dark)pesquisar esses col md 5 e offset md 1. são tags do bootstrap que cria colunas com o tamanho 5 e da espaço por fora de 1.-->
+            <img src="img/login.svg" width="90%" alt="">
         </div>
         
-        <div class="col-md-4 bg-danger"> <!--bg é background, isso já está pegando do bootstrap-->
-            Formulario
+        <div class="col-md-5"> <!--bg é background, isso já está pegando do bootstrap-->
+            <form action="" class="w-100"> <!--aqui foi colocado tamanho de 100% do formulário pra caber o tamanho 5 da div-->
+                <input placeholder="Email" type="text" class="form-control form-control-lg">
+                <input placeholder="Senha" type="text" class="form-control form-control-lg">
+                
+                <button class="btn btn-purple w-100"> ENTRAR </button>
+                <p class="text-center mt-3">
+                    <a href="#">Esqueci minha senha</a>
+                    <br>
+                    <a href="#">Ainda não tenho conta</a>
+                </p>
+            </form>
         </div>
         
     </div>

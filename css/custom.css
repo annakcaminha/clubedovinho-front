@@ -1,0 +1,28 @@
+/* 
+definições:
+
+cores primárias #ECD6EC
+
+*/
+
+
+html, body {
+    height: 100%;
+    background-color: #efefef;
+}
+
+body.login div { /* alternativa para body.login > .row > .col-md-4 | tem que colocar classes genéricas, não atribuir para as tags do bootstrap porque se modificar vai complicar depois pra encontrar o bug*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.btn-purple {
+    background-color: #ECD6EC;
+    color: white;
+    border: 1px solid #ECD6EC;
+}
+
+.btn-purple:hover {
+    background-color: #ECD6EC;
+}
