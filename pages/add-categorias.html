@@ -57,12 +57,20 @@ btn-sn: deixa menor
     </div>
 
     <section class="card card-body mt-3">
-        <form action="">
+        <div id="erro_nome" style="display: none;" class="alert alert-danger">
+            Nome Inválido
+        </div>
+
+        <div id="erro_descricao" style="display: none;" class="alert alert-danger">
+            Descrição Inválida
+        </div>
+
+        <form onsubmit="enviar()" action="">
             <label for="nome">Nome: </label>
-            <input placeholder="Digite aqui" type="text" class="form-control mb-3">
+            <input id="nome" placeholder="Digite aqui" type="text" class="form-control mb-3">
 
             <label for="descricao">Descrição:</label>
-            <textarea placeholder="Digite aqui" class="form-control mb-3" name="" id=""></textarea>
+            <textarea id="descricao" placeholder="Digite aqui" class="form-control mb-3" name="" id=""></textarea>
 
             <button class="btn btn-primary w-100">
                 Criar
@@ -72,6 +80,7 @@ btn-sn: deixa menor
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script src="../js/eventos.js"></script>
 </body>
 </html>
 

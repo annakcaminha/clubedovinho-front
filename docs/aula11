@@ -1,0 +1,17 @@
+# Lógica de programação
+Livros recomendados: 
+estrutura de dados e algoritmos com javascript
+Entendendo algoritmos (para quem não conhece)
+
+## Estruturas de Fluxo do código
+
+O código será executado na sequencia
+- Sequencial
+    Uma linha executada por vez, na sequencia que foi declarada.
+- Decisão / Seleção
+    Um código só poderá ser executado se a condição for satisfatória.
+        - Simples (um caminho só), IF. só tem uma saida.
+        - Composta (quando há 2 caminhos, bifurcação) if else.
+        - Encadeada
+        - Multipla Escolha
+- Repetição
