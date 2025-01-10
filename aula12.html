@@ -39,9 +39,28 @@
         'Zenilda'
     ];
 
-    document.write (alunos[0])
+        // para adicionar alguem na lista
+        alunos.push('Amanda');
+        alunos.push('Barbara');
+        alunos.push('Carla');
+        alunos[5] = 'Denise';
+        alunos.push('eduarda');
+        alunos.push('leticia');
 
+        console.log(alunos.length);
+        
+       let x = 0;
+     // alunos.sort();
+      alunos.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())); // torna todos os caracteres minusculos antes de organizar
+      alunos.reverse(); //para todos os itens fiquem em ordem contrária, é preciso primeiro ordenar. Senão, ele vai aplicar o reverse a cada entrada (primeiro a maria, josefa e zenilda, depois os push)
+      
+     // document.write(alunos.join('<br>')) // coloca o código em um só
 
+      while (x < alunos.length) {
+           document.write(alunos[x].toUpperCase() +'<br>'); //touppercase deixa maiúsculas
+           x++;
+           
+        } 
 
 
 
