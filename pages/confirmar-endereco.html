@@ -1,0 +1,85 @@
+<!--
+
+Aula 15 
+### Assuntos de aula
+DOM:
+OnKeyUp - aciona javascript quando o usuário teclar alguma coisa
+- no html, quando você escreve os numeros ou nomes, aparece no cartão do lado direito;
+OnChange - aciona javascript quando
+ 
+
+
+
+Aula 16
+### Assuntos de aula
+DOM:
+AddEventListener - aciona javascript quando
+
+### Objetivos da aula:
+- MUDAR A BANDEIRA DO CARTÃO
+- PERMITIR APENAS NÚMEROS
+- VIRAR O VERSO DO CARTÃO
+
+
+### NOTAS
+01. Sempre que um elemento sofrer alteração (mudar de estado) com interação do usuário, tem que ter um ID.
+02. Object Calishtenics
+   - 20 Linhas por função é o ideal
+03. Expressoes regulares
+     pattern= "{5}[0-9]"
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Confirmar Endereço</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    
+    <body class="container">
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+
+                <h1>Endereço</h1>
+            </div>
+
+            <div class="col-md-5 offset-md-1">
+                
+                <div class="card card-body">
+                  <form action="">
+                    <label for="cep">CEP</label>
+                    <input maxlength="8" id="cep" type="text" class="form-control mb-3" placeholder="Só números">
+                    <label for="logradouro">Logradouro</label>
+                    <input id="logradouro" type="text" class="form-control mb-3" placeholder="Nome da Rua">
+                    <label for="numero">Numero</label>
+                    <input id="numero" type="text" class="form-control mb-3" placeholder="Número do imóvel">
+                    <label for="bairro">Bairro</label>
+                    <input id="bairro" type="text" class="form-control mb-3" placeholder="Seu bairro">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" type="text" class="form-control mb-3" placeholder="Sua Cidade">
+                    <label for="uf">UF</label>
+                    <input id="uf" type="text" class="form-control mb-3" placeholder="Seu estado">
+                    <button class="btn btn-success w-100">PRONTO</button>
+
+
+                </form>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+               <img src="../img/confirmar_pagamento.svg" width="115%" alt="">
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+        <script src="../js/endereco.js"></script>
+    </body>
+</html>
