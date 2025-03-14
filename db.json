@@ -1,0 +1,44 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Dom bento",
+            "category": "Tinto suave",
+            "price": 5.19,
+            "image": "",
+            "quantity": 12
+        },
+        {
+            "id": "2",
+            "name": "Quinta do morgado",
+            "category": "Tinto suave",
+            "price": 10.89,
+            "image": "",
+            "quantity": 6
+        },
+        {
+            "id": "3",
+            "name": "Quinta do morgado",
+            "category": "Tinto suave",
+            "price": 10.89,
+            "image": "",
+            "quantity": 6
+        },
+        {
+            "id": "4",
+            "name": "Quinta do morgado",
+            "category": "Tinto suave",
+            "price": 10.89,
+            "image": "",
+            "quantity": 6
+        },
+        {
+            "id": "5",
+            "name": "Quinta do morgado",
+            "category": "Tinto suave",
+            "price": 10.89,
+            "image": "",
+            "quantity": 6
+        }
+    ]
+}
